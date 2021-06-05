@@ -7,12 +7,13 @@ import ReactGA from 'react-ga';
 // GA
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
   ReactGA.initialize('G-CB7FTQF6J9'),
   ReactGA.pageview(window.location.pathname + window.location.search),
   ReactGA.event({ category: 'User', action: 'Sent message' }),
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+
   document.getElementById('root')
 );
 
