@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-
+import ReactGA from 'react-ga';
 function App() {
   return (
     <div className="App">
