@@ -3,7 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+import ReactGA from 'react-ga';
+// GA
+ReactGA.initialize('G-CB7FTQF6J9');
+ReactGA.pageview(window.location.pathname + window.location.search);
+ReactGA.event({ category: 'User', action: 'Sent message' }); 
 ReactDOM.render(
   <React.StrictMode>
     <App />
