@@ -4,7 +4,7 @@ import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import home from './components/pages/home';
 import producer from './components/pages/producer';
-import stock from './components/pages/stock';
+import stock from './components/pages/stock.js';
 
 function App() {
   return (
