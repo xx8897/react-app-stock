@@ -1,6 +1,17 @@
 import React from 'react';
 import '../Cards.css';
 import CardItem from '../CardItem';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import cathaybk from '../intro/cathaybk'
+import csc from '../intro/csc'
+import delta from '../intro/delta'
+import fpg from '../intro/fpg'
+import fubon from '../intro/fubon'
+import honhai from '../intro/honhai'
+import mediatek from '../intro/mediatek'
+import npc from '../intro/npc'
+import tsmc from '../intro/tsmc'
+import umc from '../intro/umc'
 
 function Cards() {
   return (
@@ -13,8 +24,14 @@ function Cards() {
               src='images/tsmc.jpg'
               text='2330 台積電'
               label='stock'
-              path='/msci'
+              path='/tsmc'
             />
+            <Router>
+              <Switch>
+                <Route path='/tsmc' component={tsmc} />
+                </Switch>
+            </Router>
+
             <CardItem
               src='images/mediatek.jpg'
               text='2454 聯發科'
